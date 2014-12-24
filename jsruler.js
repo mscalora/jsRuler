@@ -8,7 +8,7 @@ return d||(f=$b[b],$b[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,$b[b]=f),e}});v
     document._addRuler = function () {
         var div = $('<div id="test-div" style="height:2.5em; width:40px; background: rgba(255,0,0,0.3); position:absolute; z-index:89898989; left:10px; top:10px; cursor:move; color:white; text-shadow: 1.5px 0 0 black, 0 1.5px 0 black, 0 -1.5px 0 black, -1.5px 0 0 black;">' +
             '<div style="cursor:crosshair; position:absolute; right:0; bottom:0; width:6px; height:6px; background:red; opacity:0.5;"/>' +
-            '<span style="position: absolute; margin:4px; font-size:20px; line-height:100%; display: inline-block; white-space: nowrap;"/></div>').prependTo('body');
+            '<span style="color: white; position: absolute; margin:4px; font-size:20px; line-height:100%; display: inline-block; white-space: nowrap;"/></div>').prependTo('body');
         var span = div.find('span');
 
         function u() {
