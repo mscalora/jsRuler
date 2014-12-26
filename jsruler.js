@@ -37,7 +37,7 @@ if (typeof jQuery==='undefined') {
 
         div.on('mousedown', function (e1) {
             var pos = div.position();
-            $('body').on('mousemove.test-dev',function (e2) {
+            $(document).on('mousemove.js__ruler',function (e2) {
                 div.css({
                     left: pos.left + e2.pageX - e1.pageX,
                     top: pos.top + e2.pageY - e1.pageY
@@ -45,7 +45,7 @@ if (typeof jQuery==='undefined') {
                 u();
                 return false;
             }).one('mouseup', function () {
-                $('body').off('mousemove.test-dev');
+                $(document).off('mousemove.js__ruler');
                 u();
                 return false;
             });
@@ -54,7 +54,7 @@ if (typeof jQuery==='undefined') {
         div.find('div').on('mousedown', function (e1) {
             var w = div.width();
             var h = div.height();
-            $('body').on('mousemove.test-dev',function (e2) {
+            $(document).on('mousemove.js__ruler',function (e2) {
                 div.css({
                     width: Math.max(4, w + e2.pageX - e1.pageX),
                     height: Math.max(4, h + e2.pageY - e1.pageY)
@@ -62,7 +62,7 @@ if (typeof jQuery==='undefined') {
                 u();
                 return false;
             }).one('mouseup', function () {
-                $('body').off('mousemove.test-dev');
+                $(document).off('mousemove.js__ruler');
                 u();
                 return false;
             });
